@@ -82,4 +82,4 @@ elif opcao == 'S':
     valor = float(input('Qual valor sacar? '))
     correntista.saque(valor)        
 else:
-    print('Opção invalida')  
+    print('Opção invalida')
