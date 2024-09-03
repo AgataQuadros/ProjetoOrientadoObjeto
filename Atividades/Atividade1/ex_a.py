@@ -43,8 +43,11 @@ c = int(input('Entre com o 3º valor: '))
 # Objeto da classe
 valores = Calculos(a, b, c)
 
+resultado_soma = valores.somar()
+resultado_produto = valores.multiplicar()
+
 # Saida
 print('-' * 20)
-print(f'A soma dos valores propostos é: {valores.somar()}')
-print(f'O produto dos valores propostos é: {valores.multiplicar()}')
+print(f'A soma dos valores propostos é: {resultado_soma}')
+print(f'O produto dos valores propostos é: {resultado_produto}')
 print('=' * 50)
