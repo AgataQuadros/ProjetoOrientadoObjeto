@@ -17,19 +17,28 @@ print('-' * 20)
 
 # Criando classe
 class Divisao:
-    def __init__(self, ):
-        print
+    def __init__(self, dividendo, divisor):
+        self.dividendo = dividendo
+        self.divisor = divisor
+    
+    
+    def dividir(self):
+       resultado = dividendo / divisor
+       return resultado
+
+
 # Entrada
 dividendo = (float(input('Entre com o divendendo: ')))
 divisor = (float(input('Entre com o divisor: ')))
 
-# Processamento
-resultado = dividendo / divisor
+resultado = Divisao(divisor, dividendo)
+quociente = resultado.dividir()
+
 
 # Saída
 print('')
 print('-' * 20)
-print(f'O resultado da divisão entre {dividendo} / {divisor} é {resultado: .4f}')
+print(f'O resultado da divisão entre {dividendo} / {divisor} é {quociente: .4f}')
 print('-' * 20)
 print('')
 print('=' * 50)
