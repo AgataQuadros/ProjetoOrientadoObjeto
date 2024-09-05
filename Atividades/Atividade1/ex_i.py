@@ -14,3 +14,26 @@ os.system('cls')
 print('=' * 50)
 print('EXERCÍCIO I')
 print('-' * 20)
+
+# iniciando classe
+class Convercao:
+    def __init__(self, real):
+        self.real = real
+    
+    def dolares(self):
+        dolar = real / 5
+        return dolar
+
+# Entrada
+real = (float(input('Digite o valor em real: ')))
+
+resultado = Convercao(real)
+dolar = resultado.dolares()
+
+# Saída
+print('')
+print('-' * 20)
+print(f'Se você tem R${real} então você pode ter ${dolar}')
+print('-' * 20)
+print('')
+print('=' * 50)
