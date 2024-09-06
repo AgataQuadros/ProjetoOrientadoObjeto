@@ -17,6 +17,13 @@ print('=' * 50)
 print('EXERCÍCIO A')
 print('-' * 20)
 
+# Iniciando a classe Pai
+class zsdjkvnh:
+    def __init__(self):
+        pass
+
+
+
 
 # Processamento
 for c in range(1,100):
