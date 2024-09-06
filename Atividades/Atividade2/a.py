@@ -17,3 +17,14 @@ print('=' * 50)
 print('EXERCÍCIO A')
 print('-' * 20)
 
+
+# Processamento
+for c in range(1,100):
+    print('----')
+    print(c)
+
+# Saida
+print('')
+print('-' * 20)
+print('Fim do exercício :D')
+print('=' * 50)

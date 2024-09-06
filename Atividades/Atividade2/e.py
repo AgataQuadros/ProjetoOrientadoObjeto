@@ -13,5 +13,25 @@ import os
 os.system('cls')
 
 print('=' * 50)
-print('EXERCÍCIO A')
+print('EXERCÍCIO E')
 print('-' * 20)
+
+# Entrada
+quantidade_pares = 0
+soma = 0
+
+
+# Processamento
+for c in range(0, 102):
+    if c % 2 ==0:
+        quantidade_pares += 1
+        soma += c
+        
+print('----')
+print(quantidade_pares)
+print(soma)
+
+# Saida
+print('-' * 20)
+print('Fim do exercício :D')
+print('=' * 50)

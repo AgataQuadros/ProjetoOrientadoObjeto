@@ -15,5 +15,34 @@ import os
 os.system('cls')
 
 print('=' * 50)
-print('EXERCÍCIO A')
+print('EXERCÍCIO K')
 print('-' * 20)
+
+# Entarda de dados.
+while True:
+    print('-'*79)
+    frase = input('Digite a frase que deseja verificar: ')
+    print('-'*79)
+    # Validação de dados.
+    if (frase.isnumeric()):
+        print('Entrada inválida!')
+    else:
+        break
+
+# Processameento de dados.
+sem_espaço = frase.replace(' ', '').lower()
+invertida = sem_espaço[::-1]
+if (sem_espaço == invertida):
+    resposta = f'{frase} é um palíndromo!'
+else:
+    resposta = f'{frase} não é um palíndromo!'
+
+# Saída de dados.
+print('='*79)
+print(resposta)
+print('='*79)
+
+# Imprimindo título de fim.
+print('.'*79)
+print('Fim do programa! Obrigado!')
+print('.'*79)

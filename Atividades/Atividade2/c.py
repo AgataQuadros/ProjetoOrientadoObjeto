@@ -13,5 +13,15 @@ import os
 os.system('cls')
 
 print('=' * 50)
-print('EXERCÍCIO A')
+print('EXERCÍCIO C')
 print('-' * 20)
+
+# Processamento
+for c in range(10, 0, -1):
+    print('----')
+    print(f'{c}')
+
+# Saida
+print('-' * 20)
+print('Fim do exercício :D')
+print('=' * 50)

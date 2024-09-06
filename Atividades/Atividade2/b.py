@@ -13,5 +13,20 @@ import os
 os.system('cls')
 
 print('=' * 50)
-print('EXERCÍCIO A')
+print('EXERCÍCIO B')
 print('-' * 20)
+
+# Entrada
+inicio = int(input('Entre com o 1° número do seu intervalo: '))
+fim = int(input('Entre com o ultimo número do seu intervalo: '))
+
+# Processamento
+for c in range(inicio,fim):
+    print('----')
+    print(f'{c}')
+
+# Saida
+print('')
+print('-' * 20)
+print('Fim do exercício :D')
+print('=' * 50)
