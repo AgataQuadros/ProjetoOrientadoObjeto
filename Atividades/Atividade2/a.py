@@ -27,13 +27,15 @@ class Numeros:
         lista = []
         for i in range(self.inicio, self.fim):
             lista.append(i)
-            return f'{lista}'
+            return lista
             
 
     
 class Imprimir(Numeros):
-    def contagem():
-        Imprimir()
+    def printar(self, lista):
+        for numero in lista:
+            print(numero, end=', ')
 
 lista_numero = Numeros(1,100)
-print(lista_numero.contagem())
+variavel = lista_numero.contagem()
+impressora = Imprimir
