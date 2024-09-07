@@ -17,21 +17,19 @@ print('=' * 50)
 print('EXERCÍCIO A')
 print('-' * 20)
 
-# Iniciando a classe Pai
-class zsdjkvnh:
-    def __init__(self):
-        pass
 
+class Numeros:
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+    
+    def contagem(self):
+        lista = []
+        for i in range(self.inicio, self.fim):
+            lista.append(i)
+            
 
-
-
-# Processamento
-for c in range(1,100):
-    print('----')
-    print(c)
-
-# Saida
-print('')
-print('-' * 20)
-print('Fim do exercício :D')
-print('=' * 50)
+    
+class Imprimir(Numeros):
+    def contagem():
+        pass # só pro arquivo não ficar como erro
