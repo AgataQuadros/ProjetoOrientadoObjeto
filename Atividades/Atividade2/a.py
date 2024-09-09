@@ -23,19 +23,20 @@ class Numeros:
         self.inicio = inicio
         self.fim = fim
     
-    def contagem(self):
-        lista = []
-        for i in range(self.inicio, self.fim):
-            lista.append(i)
-            return lista
-            
+    def imprimir_numeros(self, inicio, fim):
+        # este metodo vai ser sobrecarregado
+        print()
 
-    
-class Imprimir(Numeros):
-    def printar(self, lista):
-        for numero in lista:
-            print(numero, end=', ')
 
-lista_numero = Numeros(1,100)
-variavel = lista_numero.contagem()
-impressora = Imprimir
+class Listagem(Numeros):
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+
+    def imprimir_numeros(self):
+        for numero in range(self.inicio, self.fim):
+            print(numero, end=' ')
+
+
+contagem = Listagem(1, 101)
+contagem.imprimir_numeros()
