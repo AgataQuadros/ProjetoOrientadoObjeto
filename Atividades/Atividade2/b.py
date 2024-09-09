@@ -16,14 +16,35 @@ print('=' * 50)
 print('EXERCÍCIO B')
 print('-' * 20)
 
+
+class Numeros:
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+    
+    def imprimir_numeros(self, inicio, fim):
+        # este metodo vai ser sobrecarregado
+        print()
+
+
+class Listagem(Numeros):
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+
+    def imprimir_numeros(self):
+        for numero in range(self.inicio, self.fim):
+            print(numero, end=' ')
+
+
+
+
 # Entrada
 inicio = int(input('Entre com o 1° número do seu intervalo: '))
 fim = int(input('Entre com o ultimo número do seu intervalo: '))
 
-# Processamento
-for c in range(inicio,fim):
-    print('----')
-    print(f'{c}')
+contagem = Listagem(inicio, fim)
+contagem.imprimir_numeros()
 
 # Saida
 print('')
