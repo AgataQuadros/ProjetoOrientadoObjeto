@@ -20,22 +20,40 @@ print('=' * 50)
 print('EXERCÍCIO J')
 print('-' * 20)
 
-# Entrada
-quantidade_impar = 0
-soma = 0
+
+
+# Criando as Classes
+class Numeros:
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+
+    def quantidade_numeros(self, inicio, fim):
+        # este metodo vai ser sobrecarregado
+        pass
+
+
+class Sequencia(Numeros):
+    def __init__(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+
+    def quantidade_numeros(self):
+        quantidade_impares = 0
+        soma = 0
+
+        for numero in range(self.inicio, self.fim):
+            if not numero % 2 == 0:
+                quantidade_impares += 1
+                soma += numero
+        print(quantidade_impares)
+        print(soma)
+
 
 # Processamento
-for c in range(0,100):
-    if not c % 2 == 0:
-        quantidade_impar += 1
-        soma += c
-        print(c, end=' - ')
+intervalo = Sequencia(0, 100)
+intervalo.quantidade_numeros()
 
-print()
-print('----')
-print(quantidade_impar)
-print('----')
-print(soma)
 
 # Saida
 print('')
