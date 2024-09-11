@@ -25,4 +25,6 @@ class Classefilha(ClassePai): # Classe Derivada
 
 # Programa principal
 teste = Classefilha(1, 2)
-teste.metodo_classe()
+soma = teste.metodo_classe()
+
+print(soma)
